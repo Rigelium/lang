@@ -5,7 +5,7 @@
    
   </head>
 <body>
-  <div id="btn-container" style="display: flex; gap: 10px; flex-wrap: wrap;"></div>
+  <div id="btn-container" style="display: flex; gap: 2px; flex-wrap: wrap;"></div>
 
   <script>
     let currentSentence = 0;
@@ -15,9 +15,9 @@
       ["", "Íme", "a hármadik!"]
     ];
 
-    window.onload = generateSentence();
+    window.onload = generateSentence;
     
-    const generateSentence = function() {
+    function generateSentence() {
       container = document.getElementById("btn-container");
 
       for(let i = 0; i<sentencesHu[currentSentence][0].split(" ").length ; i++){
@@ -30,7 +30,7 @@
         });
       }
       const btn = document.createElement('button');
-        btn.innerText = "__________";
+        btn.innerText = "______";
         container.appendChild(btn);
       
       for(let i = 0; i<sentencesHu[currentSentence][2].split(" ").length ; i++){
