@@ -1,33 +1,15 @@
 <!DOCTYPE html>
 <html>
 <body>
-  <h2>Mini Translator</h2>
+  <a href="" id="bomboclat">Wikt</a>
   <textarea id="input" placeholder="Type something..."></textarea>
-  <button onclick="handleTranslate()">Translate to Spanish</button>
+  <button onclick="wikt()">Translate to Spanish</button>
   <p id="output"></p>
 
   <script>
-    async function handleTranslate() {
-      const text = document.getElementById('input').value;
-      const output = document.getElementById('output');
+    function wikt() {
+      document.getElementById('bomboclat').href = "meow";
       
-      try {
-        const res = await fetch("https://libretranslate.com/translate", {
-          method: "POST",
-          body: JSON.stringify({
-            q: text,
-            source: "en",
-            target: "es",
-            format: "text"
-          }),
-          headers: { "Content-Type": "application/json" }
-        });
-
-        const data = await res.json();
-        output.innerText = data.translatedText || "Error: " + data.error;
-      } catch (err) {
-        output.innerText = "Failed to connect to the API.";
-      }
     }
   </script>
 </body>
