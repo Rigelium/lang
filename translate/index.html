@@ -23,7 +23,7 @@
         container.appendChild(btn);
 
         btn.addEventListener('click', () => {
-          window.location.href = "https://en.wiktionary.org/wiki/" + btn.innerText.replace(/[.,?!]/g, ""); + "#Hungarian";
+          window.location.href = "https://en.wiktionary.org/wiki/" + btn.innerText.replace(/[.,?!]/g, "") + "#Hungarian";
         });
       }
       for(let i = 0; i<sentencesHu[currentSentence][2].split(" ").length ; i++){
@@ -32,7 +32,7 @@
         container.appendChild(btn);
         
         btn.addEventListener('click', () => {
-          window.location.href = "https://en.wiktionary.org/wiki/" + btn.innerText.replace(/[.,?!]/g, ""); + "#Hungarian";
+          window.location.href = "https://en.wiktionary.org/wiki/" + btn.innerText.replace(/[.,?!]/g, "") + "#Hungarian";
         });
         
       }
