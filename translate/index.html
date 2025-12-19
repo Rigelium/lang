@@ -4,22 +4,36 @@
   <a href="" id="bomboclat">Wikt</a>
   <textarea id="input" placeholder="Type something..."></textarea>
   <button id="button" onclick="wikt()">Translate to Spanish</button>
+  <div id="btn-container" style="display: flex; gap: 10px; flex-wrap: wrap;"></div>
   <p id="output"></p>
 
   <script>
     const sentencesHu = [
       ["Ez az első ", "mondat", "ebben a játékban."],
       ["Ez pedig a ",  "második.", ""],
-      ["Íme", "a", "hármadik"]
+      ["", "Íme", "a hármadik!"]
     ];
-    window.onload = function()
-    {console.log(sentencesHu[1][2]);
-    };
+
+    //const buttonContainer = document.getElementById("btn-container");
+    //for (var i = 0; i < length)
+    //const btn = buttonContainer.createElement('button');
+    //btn.
+    
+    sentencesHu[0].forEach((cellText) => {
+    const btn = document.createElement('button');
+    btn.innerText = cellText;
+    });
+
+    
     //Verweist auf einen Link
     const btn = document.getElementById('button');
+    
+
+    
     btn.addEventListener('click', () => {
       window.location.href = "https://en.wiktionary.org/wiki/" + document.getElementById('input').value + "#Hungarian";
     });
+    
     
   </script>
 </body>
