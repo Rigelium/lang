@@ -13,9 +13,9 @@
     window.onload = function() {
       container = document.getElementById("btn-container");
 
-      for(let i = 0; i<sentencesHu[0].length ; i++){
+      for(let i = 0; i<sentencesHu[0][0].split(" ").length ; i++){
         const btn = document.createElement('button');
-        btn.innerText = sentencesHu[0][i];
+        btn.innerText = sentencesHu[0][0].split(" ")[i];
         container.appendChild(btn);
       };
             }
