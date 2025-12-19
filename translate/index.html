@@ -4,6 +4,7 @@
   <div id="btn-container" style="display: flex; gap: 10px; flex-wrap: wrap;"></div>
 
   <script>
+    let currentSentence = 0;
     const sentencesHu = [
       ["Ez az első ", "mondat", "ebben a játékban."],
       ["Ez pedig a ",  "második.", ""],
@@ -13,12 +14,18 @@
     window.onload = function() {
       container = document.getElementById("btn-container");
 
-      for(let i = 0; i<sentencesHu[0][0].split(" ").length ; i++){
+      for(let i = 0; i<sentencesHu[currentSentence][0].split(" ").length ; i++){
         const btn = document.createElement('button');
-        btn.innerText = sentencesHu[0][0].split(" ")[i];
+        btn.innerText = sentencesHu[currentSentence][0].split(" ")[i];
         container.appendChild(btn);
-      };
-            }
+      }
+      for(let i = 0; i<sentencesHu[currentSentence][2].split(" ").length ; i++){
+        const btn = document.createElement('button');
+        btn.innerText = sentencesHu[currentSentence][2].split(" ")[i];
+        container.appendChild(btn);
+      }
+    
+    }
    
     
   </script>
