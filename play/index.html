@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diecto</title>
    <style>
-     .a{
-       text-decoration: none;
+     :root{
+       --fontcolor1: black;
+       --fontcolor2: white;
+       --boxcolor1: #1f2322;
+     }
+     .body{
+       font-family: arial;
      }
      #btn-container a{
        text-decoration: none;
-       color: white;
+       color: --fontcolor2;  
+     }
+     .box{
+       
      }
    </style>
   </head>
-<body style="text-decoration: none; font-family: arial;">
+<body>
   <div style="display: flex; justify-content: center;">
-    <div style="display: flex; background-color: #EEEEFF; width: 80%; justify-content: center; text-allign: center; color: white; text-decoration: none;">
+    <div style="display: flex; background-color: --boxcolor1; width: 80%; justify-content: center; text-allign: center; color: white; text-decoration: none;">
       <div id="btn-container" style="display: flex; gap: 2px; flex-wrap: wrap; text-decoration: none;"></div>
+    </div>
+    <div id="answer-container">
+      
     </div>
   </div>
   <script>
