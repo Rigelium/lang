@@ -8,6 +8,7 @@
        --fontcolor1: black;
        --fontcolor2: white;
        --boxcolor1: #1f2322;
+       --blankcolor: white;
      }
      body{
        font-family: arial;
@@ -16,10 +17,17 @@
        text-decoration: none;
        color: var(--fontcolor2);  
      }
+     .blank-button{
+       background: var(--blankcolor); 
+       border-radius: 2px; 
+       width: 50px;
+     }
      .box1{
        border-radius: 10px;
        background-color: var(--boxcolor1);
+       padding: 10px;
      }
+     
    </style>
   </head>
 <body>
@@ -53,8 +61,10 @@
       }
       
       const btn = document.createElement('a');
-        btn.textContent = "______";
+        btn.textContent = "";
+        btn.className = "blank-button";
         container.appendChild(btn);
+      
       
       for(let i = 0; i<sentencesHu[currentSentence][2].split(" ").length ; i++){
         const btn = document.createElement('a');
