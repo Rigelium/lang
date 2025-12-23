@@ -98,6 +98,7 @@
     const answerContainer = document.getElementById("answer-container");
     const answer = [];
     const answerText = [];
+    let answerGiven = 0;
     for(let i = 0; i < 4; i++){
       answer[i] = document.createElement('div');
       answer[i].className = "answer";
@@ -106,6 +107,7 @@
       answerText[i].textContent = sentencesHu[currentSentence][i+4];
 
       answer[i].addEventListener('click', () =>{
+        if(answerGiven == 0){
         const rightAnswer = document.getElementById('hidden');
         rightAnswer.textContent = sentencesHu[currentSentence][1];
         rightAnswer.style.backgroundColor = 'black';
@@ -116,6 +118,8 @@
           answer[i].style.backgroundColor = "var(--blueish)";
         }else{
           answer[i].style.backgroundColor = "red";
+        }
+        answerGiven = 1;
         }
       });
       
