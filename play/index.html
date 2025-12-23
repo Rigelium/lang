@@ -102,7 +102,7 @@
       answerText[i].textContent = sentencesHu[currentSentence][i+4];
 
       answer[i].addEventListener('click', () =>{
-        //if (answerText[i+4]==sentencesHu[currentSentence][1]){
+        if (answerText[i]==sentencesHu[currentSentence][1]){
           document.getElementById('translated').textContent = "correct!";
         //}
       });
