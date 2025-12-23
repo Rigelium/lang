@@ -129,6 +129,9 @@
     cont.style.backgroundColor="var(--grayish)";
     cont.addEventListener("click", () => {
       currentSentence++;
+      cont.replaceChildren();
+      container.replaceChildren();
+      answerContainer.replaceChildren();
       generateSentence();
     });
     contContainer.appendChild(cont);
