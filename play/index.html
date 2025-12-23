@@ -105,8 +105,10 @@
       answerText[i].textContent = sentencesHu[currentSentence][i+4];
 
       answer[i].addEventListener('click', () =>{
-        document.getElementById('hidden').textContent = sentencesHu[currentSentence][1];
-        document.getElementById('hidden').style.backgroundColor = 'black'; 
+        const rightAnswer = document.getElementById('hidden');
+        rightAnswer.textContent = sentencesHu[currentSentence][1];
+        rightAnswer.style.backgroundColor = 'black';
+        rightAnswer.href = "https://en.wiktionary.org/wiki/" + sentencesHu[currentSentence][1] + "#Hungarian";
         if (answerText[i].textContent==sentencesHu[currentSentence][1]){
           //CORRECT CHOICE
           answer[i].style.backgroundColor = "var(--blueish)";
