@@ -31,6 +31,13 @@
        background-color: var(--boxcolor1);
        padding: 10px;
      }
+     .answer{
+       border-radius: 10px;
+       background-color: var(--boxcolor1);
+       padding: 10px;
+       height: 50px;
+       width: 80%;
+     }
      
    </style>
   </head>
@@ -40,8 +47,7 @@
       <div id="btn-container" style="display: flex; gap: 2px; flex-wrap: wrap; justify-content: center;"></div>
       <a id="translated" style="color: var(--textcolor2); text-align: center;"></a>
     </div>
-    <div id="answer-container">
-      
+    <div id="answer-container" style="display: flex; flex-direction: column;">
     </div>
   </div>
   <script>
@@ -81,6 +87,14 @@
       //GENERATE THE TRANSLATION
       const translated = document.getElementById('translated');
       translated.textContent = sentencesHu[currentSentence][3];
+    }
+
+    //GENERATE THE ANSWERS
+    const answerContainer = document.getElementById("answer-container");
+    for(let i = 0; i < 4; i++){
+      const answer[i] = document.createElement('div');
+      answer[i].className = "answer";
+      answerContainer.appendChild(answer[i]);
     }
   </script>
 </body>
