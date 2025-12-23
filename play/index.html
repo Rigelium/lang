@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diecto</title>
+    <title>Deicto</title>
    <style>
      :root{
        --fontcolor1: black;
@@ -76,6 +76,7 @@
       const btn = document.createElement('a');
         btn.textContent = "";
         btn.className = "blank-button";
+        btn.id = "hidden";
         container.appendChild(btn);
       
       for(let i = 0; i<sentencesHu[currentSentence][2].split(" ").length ; i++){
@@ -103,7 +104,10 @@
 
       answer[i].addEventListener('click', () =>{
         if (answerText[i].textContent==sentencesHu[currentSentence][1]){
-          document.getElementById('translated').textContent = "correct!";
+          answer[i].backgroundColor == "blue";
+          document.getElementById('hidden').textContent = "answerText[i].textContent";
+          document.getElementById('hidden').backgroundColor = "black";
+          
         }
       });
       
