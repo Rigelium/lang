@@ -103,11 +103,13 @@
       answerText[i].textContent = sentencesHu[currentSentence][i+4];
 
       answer[i].addEventListener('click', () =>{
+        document.getElementById('hidden').textContent = answerText[i].textContent;
+        document.getElementById('hidden').style.backgroundColor = 'black'; 
         if (answerText[i].textContent==sentencesHu[currentSentence][1]){
+          //CORRECT CHOICE
           answer[i].style.backgroundColor == "var(--blueish)";
-          document.getElementById('hidden').textContent = answerText[i].textContent;
-          document.getElementById('hidden').style.backgroundColor = 'black';
-          
+        }else{
+          answer[i].style.backgroundColor == "red";
         }
       });
       
