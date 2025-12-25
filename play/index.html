@@ -71,13 +71,12 @@
     let currentSentence = 0;
     
     async function loadLevelData() {
-      try{
+      try {
         const response = await fetch("../levels/hungarian/lv_" + "1" + ".json");
-        levelData = await response.json();
-        generateSentence(levelData);
-        
+        levelData = await response.json();        
         const lvTitle = levelData.title;
-        const sentencesHu = levelData.sentences
+        const sentencesHu = levelData.sentence  
+        generateSentence();
       } catch (error) {
         console.error("Failed to load level data.", error);
       }
