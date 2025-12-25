@@ -59,6 +59,7 @@
       <div id="btn-container" style="display: flex; gap: 4px; flex-wrap: wrap; justify-content: center;"></div>
       <a id="translated" style="color: var(--fontcolor3); text-align: center;"></a>
     </div>
+    <div id=dictionary-container></div>
     <div id="notes-container"></div>
     <div id="answer-container" style="display: flex; flex-direction: column; gap: 10px;"></div>
     <div id="cont-container"></div>
@@ -91,7 +92,7 @@
 
     function displayNotes() {
       const notesContainer = document.getElementById('notes-container');
-      const btnContainer = document.getElementById('btn-container');
+      const dictionaryContainer = document.getElementById('dictionary-container');
       
       const notesBox = document.createElement('div');
       const notesContinue = document.createElement('div');
@@ -107,14 +108,14 @@
       
       notesContinue.addEventListener('click', () => {
         notesContainer.replaceChildren();
-        btnContainer.replaceChildren();
+        dictionaryContainer.replaceChildren();
         generateSentence();
       });
 
       notesContinue.appendChild(notesContinueText);
       notesBox.appendChild(notesText);
       notesContainer.appendChild(notesContinue);
-      btnContainer.appendChild(notesBox);
+      dictionaryContainer.appendChild(notesBox);
       
     }
 
