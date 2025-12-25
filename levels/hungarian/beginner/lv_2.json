@@ -1,0 +1,31 @@
+{
+  "title": "Common Verbs",
+  "sentences": [
+    ["Éppen kenyeret", "eszem", ".", "I am eating bread.", "eszem", "iszom", "látok", "hallok"],
+    ["Vizet", "iszom", ".", "I am drinking water.", "eszem", "iszom", "futok", "megyek"],
+    ["Egy macskát", "látok", ".", "I see a cat.", "hallok", "olvasok", "látok", "várok"],
+    ["Zajt", "hallok", ".", "I hear a noise.", "hallok", "látok", "tanulok", "írok"],
+    ["Sokat", "alszom", ".", "I sleep a lot.", "megyek", "jövök", "eszem", "alszom"],
+    ["Korán", "ébredek", ".", "I wake up early.", "ébredek", "alszom", "ülök", "állok"],
+    ["Most haza", "megyek", ".", "I am going home now.", "jövök", "megyek", "futok", "sétálok"],
+    ["Hamarosan", "jövök", "!", "I'm coming soon!", "megyek", "várok", "jövök", "segítek"],
+    ["A parkban", "futok", ".", "I run in the park.", "sétálok", "futok", "megyek", "játszom"],
+    ["Lassan", "sétálok", ".", "I walk slowly.", "futok", "ülök", "sétálok", "lakom"],
+    ["Levelet", "írok", ".", "I am writing a letter.", "olvasok", "írok", "tanulok", "válaszolok"],
+    ["Könyvet", "olvasok", ".", "I am reading a book.", "írok", "látok", "eszem", "olvasok"],
+    ["Magyarul", "tanulok", ".", "I am learning Hungarian.", "tanulok", "dolgozom", "írok", "olvasok"],
+    ["Itt", "dolgozom", ".", "I work here.", "lakom", "tanulok", "dolgozom", "várok"],
+    ["Rád", "várok", ".", "I am waiting for you.", "várok", "jövök", "megyek", "segítek"],
+    ["Ajándékot", "adok", ".", "I give a gift.", "veszem", "adok", "írok", "hallok"],
+    ["A tollat", "veszem", "fel.", "I am picking up the pen.", "adok", "veszem", "írok", "látok"],
+    ["Egyet", "kérdezek", ".", "I ask one (question).", "válaszolok", "kérdezek", "tanulok", "hallok"],
+    ["Most", "válaszolok", ".", "I am answering now.", "kérdezek", "írok", "olvasok", "válaszolok"],
+    ["Anyukámnak", "segítek", ".", "I am helping my mother.", "segítek", "várok", "adok", "megyek"],
+    ["A széken", "ülök", ".", "I am sitting on the chair.", "állok", "ülök", "alszom", "lakom"],
+    ["Most", "állok", "fel.", "I am standing up now.", "ülök", "játszom", "állok", "megyek"],
+    ["Gitáron", "játszom", ".", "I play the guitar.", "dolgozom", "játszom", "tanulok", "főzök"],
+    ["Vacsorát", "főzök", ".", "I am cooking dinner.", "eszem", "főzök", "iszom", "veszem"],
+    ["Budapesten", "lakom", ".", "I live in Budapest.", "dolgozom", "ülök", "lakom", "megyek"]
+  ],
+  "dictionary": "eszem - I eat\niszom - I drink\nlátok - I see\nhallok - I hear\nalszom - I sleep\nébredek - I wake up\nmegyek - I go\njövök - I come\nfutok - I run\nsétálok - I walk\nírok - I write\nolvasok - I read\ntanulok - I learn\ndolgozom - I work\nvárok - I wait\nadok - I give\nveszem - I take/pick up\nkérdezek - I ask\nválaszolok - I answer\nsegítek - I help\nülök - I sit\nállok - I stand\njátszom - I play\nfőzök - I cook\nlakom - I live"
+}
