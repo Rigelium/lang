@@ -124,7 +124,8 @@
         if(answerGiven == 0){
         const rightAnswer = document.getElementById('hidden');
         rightAnswer.textContent = sentencesHu[currentSentence][1];
-        rightAnswer.style.backgroundColor = 'black';
+        rightAnswer.style.backgroundColor = 'var(--boxcolor1)';
+        rightAnswer.style.color = 'var(--highlight)';
         rightAnswer.href = "https://en.wiktionary.org/wiki/" + sentencesHu[currentSentence][1] + "#Hungarian";
         showContinue();
         if (answerText[i].textContent==sentencesHu[currentSentence][1]){
