@@ -60,7 +60,7 @@
 
     window.onload = loadLevelData;
 
-    let levelData, sentencesHu, lvTitle = null;
+    let levelData, sentencesHu, lvTitle, notes = null;
     let currentSentence = 0;
     difLevel = "advanced";
     currentLevel = "1"
@@ -71,11 +71,20 @@
         levelData = await response.json();        
         lvTitle = levelData.title;
         sentencesHu = levelData.sentences;  
+        notes = levelData.dictionary;
+        if (currentSentence == 0){
+          displayNotes();
+        }
         generateSentence();
       } catch (error) {
         console.error("Failed to load level data.", error);
       }
     }
+
+    function displayNotes() {
+      console.log("It works I guess?");
+    }
+
     
     function generateSentence() {
       
