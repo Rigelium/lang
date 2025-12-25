@@ -1,0 +1,31 @@
+{
+  "title": "Government and Politics",
+  "sentences": [
+    ["A parlament tegnap hosszas vita után elfogadta az új", "törvényjavaslatot", ".", "The parliament accepted the new bill yesterday after a long debate.", "alkotmányt", "törvényjavaslatot", "költségvetést", "hatáskört"],
+    ["Az", "alkotmány", "garantálja az alapvető emberi jogok tiszteletben tartását.", "The constitution guarantees the respect of fundamental human rights.", "alkotmány", "jogállamiság", "szuverenitás", "ellenzék"],
+    ["A kormány célja az", "államadósság", "folyamatos csökkentése a következő évben.", "The government's goal is the continuous reduction of the national debt in the coming year.", "közvélemény", "intézkedés", "államadósság", "reform"],
+    ["A", "közvélemény", "kutatások szerint a választók többsége elégedetlen.", "According to public opinion polls, the majority of voters are dissatisfied.", "közvélemény", "diplomáciai", "parlament", "koalíció"],
+    ["Az ország", "szuverenitása", "nem képezheti alku tárgyát a tárgyalásokon.", "The country's sovereignty cannot be the subject of bargaining during negotiations.", "hatáskör", "szuverenitása", "jogszabály", "önkormányzat"],
+    ["A", "jogállamiság", "elvei alapvető fontosságúak az Európai Unióban.", "The principles of the rule of law are of fundamental importance in the European Union.", "demokrácia", "koalíció", "jogállamiság", "intézkedés"],
+    ["A két párt közötti", "koalíció", "váratlanul felbomlott a múlt héten.", "The coalition between the two parties unexpectedly dissolved last week.", "koalíció", "ellenzék", "reform", "népszavazás"],
+    ["Az", "ellenzék", "élesen bírálta a miniszterelnök legutóbbi beszédét.", "The opposition sharply criticized the prime minister's latest speech.", "kormányzó", "közvélemény", "parlament", "ellenzék"],
+    ["A minisztérium új", "intézkedéseket", "vezetett be az infláció megfékezésére.", "The ministry introduced new measures to curb inflation.", "intézkedéseket", "törvényjavaslatot", "hatáskört", "jogszabályt"],
+    ["A helyi", "önkormányzat", "felelős a városi infrastruktúra fenntartásáért.", "The local municipality is responsible for maintaining the urban infrastructure.", "parlament", "önkormányzat", "koalíció", "alkotmány"],
+    ["A", "népszavazás", "eredménye kötelező érvényű a döntéshozókra nézve.", "The result of the referendum is binding for the decision-makers.", "szavazati jog", "reform", "népszavazás", "közvélemény"],
+    ["A", "költségvetés", "hiánya jelentősen meghaladta az előzetes várakozásokat.", "The budget deficit significantly exceeded preliminary expectations.", "költségvetés", "államadósság", "szuverenitás", "hatáskör"],
+    ["Az új", "jogszabály", "jövő hónap elsején lép hatályba.", "The new legal regulation/statute will enter into force on the first of next month.", "törvényjavaslat", "intézkedés", "alkotmány", "jogszabály"],
+    ["A polgármester", "hatásköre", "ebben a kérdésben korlátozott.", "The mayor's jurisdiction/competence in this matter is limited.", "hatásköre", "szuverenitása", "jogállamisága", "neve"],
+    ["A", "diplomáciai", "kapcsolatok javítása érdekében küldöttséget indítottak.", "They sent a delegation to improve diplomatic relations.", "politikai", "diplomáciai", "társadalmi", "kormányzó"],
+    ["A választók", "szavazati jog", "gyakorlása alapvető demokratikus kötelezettség.", "The exercise of voting rights by voters is a fundamental democratic obligation.", "szavazati jog", "népszavazás", "koalíció", "hatáskör"],
+    ["Az oktatási", "reform", "szükségessége már évek óta napirenden van.", "The need for educational reform has been on the agenda for years.", "reform", "intézkedés", "alkotmány", "jogszabály"],
+    ["A", "demokrácia", "intézményrendszere védelmet nyújt a zsarnokság ellen.", "The institutional system of democracy provides protection against tyranny.", "szuverenitás", "jogállamiság", "demokrácia", "parlament"],
+    ["A", "társadalmi", "párbeszéd elengedhetetlen a békés együttéléshez.", "Social dialogue is essential for peaceful coexistence.", "politikai", "társadalmi", "diplomáciai", "közvélemény"],
+    ["A", "választási rendszer", "módosítása heves tiltakozásokat váltott ki.", "The modification of the electoral system sparked fierce protests.", "választási rendszer", "népszavazás", "szavazati jog", "költségvetés"],
+    ["A", "kormányzó", "párt stabil többséggel rendelkezik a házban.", "The governing party has a stable majority in the house.", "ellenzék", "koalíció", "kormányzó", "önkormányzat"],
+    ["A", "külpolitika", "prioritásai az utóbbi időben megváltoztak.", "Foreign policy priorities have changed recently.", "közvélemény", "külpolitika", "diplomáciai", "szuverenitás"],
+    ["A bizottság jelentése a", "közigazgatás", "hatékonyságát vizsgálta.", "The committee's report examined the efficiency of public administration.", "közigazgatás", "kormányzó", "önkormányzat", "jogállamiság"],
+    ["Az ország", "gazdaságpolitikai", "stabilitása vonzza a külföldi befektetőket.", "The country's economic policy stability attracts foreign investors.", "gazdaságpolitikai", "politikai", "társadalmi", "költségvetési"],
+    ["Minden", "állampolgár", "kötelessége betartani a törvényeket.", "It is every citizen's duty to obey the laws.", "képviselő", "miniszter", "állampolgár", "választó"]
+  ],
+  "dictionary": "törvényjavaslat - bill\nalkotmány - constitution\nállamadósság - national debt\nközvélemény - public opinion\nszuverenitás - sovereignty\njogállamiság - rule of law\nkoalíció - coalition\nellenzék - opposition\nintézkedés - measure\nönkormányzat - municipality\nnépszavazás - referendum\nköltségvetés - budget\njogszabály - legal regulation\nhatáskör - jurisdiction/competence\ndiplomáciai - diplomatic\nszavazati jog - voting right\nreform - reform\ndemokrácia - democracy\ntársadalmi - social\nválasztási rendszer - electoral system\nkormányzó - governing\nkülpolitika - foreign policy\nközigazgatás - public administration\ngazdaságpolitikai - economic policy\nállampolgár - citizen"
+}
