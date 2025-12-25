@@ -67,20 +67,23 @@
 
     window.onload = loadLevelData;
 
+    let levelData = null;
+    let currentSentence = 0;
     
     async function loadLevelData() {
-      const response = await fetch("../levels/hungarian/lv_" + "1" + ".json");
-      const levelData = await response.json();
-      generateSentence(levelData);
+      try{
+        const response = await fetch("../levels/hungarian/lv_" + "1" + ".json");
+        levelData = await response.json();
+        generateSentence(levelData);
+        
+        const lvTitle = levelData.title;
+        const sentencesHu = levelData.sentences
+      } catch (error) {
+        console.error("Failed to load level data.", error);
+      }
     }
-
     
-    function generateSentence(levelData) {
-
-      //getting the variables
-      const lvTitle = levelData.title;
-      const sentencesHu = levelData.sentences
-      let currentSentence = 0;
+    function generateSentence() {
       
       // GENERATING SENTENCE 
       container = document.getElementById("btn-container");
