@@ -44,12 +44,15 @@ const codeInput = document.getElementById('code-input');
       
       function saveLocal() {
         localStorage.setItem('language', input.value);
+        console.log("changed language to " + input.value);
       }
       function difSaveLocal() {
         localStorage.setItem('difLevel', difInput.value);
+         console.log("changed dif to " + difInput.value);
       }
       function codeSaveLocal() {
         localStorage.setItem('langCodeTSS', codeInput.value);
+         console.log("changed code to " + codeInput.value);
       }
 
       
