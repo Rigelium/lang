@@ -9,7 +9,7 @@
 
      
     <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/638813266440880140/1452871487945048154/image.png?ex=694b6383&is=694a1203&hm=ea28a03cd258d23b8acf516ce5d50e8d8c18830545825d3c39ad702c7ab846fc">
-    <link rel="stylesheet" href="../assets/styles.css">
+    <link rel="stylesheet" href="assets/styles.css">
     <title>Deicto</title>
   </head>
   <body>
@@ -17,9 +17,9 @@
     <input id="input">Select language</input>
     <button id="btn" onclick="saveLocal()">Set data</button>
     <input id="dif-input">Select language</input>
-    <button id="dif-btn" onclick="saveLocal()">Set data</button>
+    <button id="dif-btn" onclick="difSaveLocal()">Set data</button>
     <input id="code-input">Select language code</input>
-    <button id="code-btn" onclick="saveLocal()">Set data</button>
+    <button id="code-btn" onclick="codeSaveLocal()">Set data</button>
     
     <script>
       //language parameters are already defined
@@ -34,13 +34,22 @@
 
       const input = document.getElementById('input');
       const btn = document.getElementById('btn');
+      
 
       const difInput = document.getElementById('dif-input');
       const difBtn = document.getElementById('dif-btn');
+
+const codeInput = document.getElementById('code-input');
+      const codeBtn = document.getElementById('code-btn');
       
       function saveLocal() {
-        localStorage.setItem('currentLevel', input.value);
-        console.log("Go to /play/ to play this level: ${input.value}");
+        localStorage.setItem('language', input.value);
+      }
+      function difSaveLocal() {
+        localStorage.setItem('difLevel', input.value);
+      }
+      function codeSaveLocal() {
+        localStorage.setItem('langCodeTSS', input.value);
       }
 
       
