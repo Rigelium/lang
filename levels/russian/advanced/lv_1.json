@@ -1,0 +1,31 @@
+{
+  "title": "Business and Economics",
+  "sentences": [
+    ["Центральный банк объявил о", "девальвации", "национальной валюты.", "The Central Bank announced the devaluation of the national currency.", "инфляции", "девальвации", "ликвидности", "валюте"],
+    ["Высокая", "конкурентоспособность", "наших товаров позволяет расширять экспорт.", "High competitiveness of our goods allows us to expand exports.", "конкурентоспособность", "стабильность", "доходность", "промышленность"],
+    ["Правительство приняло меры по сдерживанию", "инфляции", ".", "The government took measures to curb inflation.", "инфляции", "девальвации", "инвестиции", "налогов"],
+    ["Для реализации проекта нам необходимо привлечь иностранные", "инвестиции", ".", "To implement the project, we need to attract foreign investments.", "доходы", "акции", "инвестиции", "обязательства"],
+    ["Компания объявила о выплате", "дивидендов", "своим акционерам.", "The company announced the payment of dividends to its shareholders.", "налогов", "активов", "расходов", "дивидендов"],
+    ["Резкое падение спроса привело к снижению", "рентабельности", "производства.", "A sharp drop in demand led to a decrease in the profitability of production.", "рентабельности", "стоимости", "выручки", "инфляции"],
+    ["Совет директоров утвердил новый", "бизнес-план", "на следующий квартал.", "The board of directors approved the new business plan for the next quarter.", "бюджет", "бизнес-план", "протокол", "отчет"],
+    ["Основным показателем успеха является чистая", "прибыль", "предприятия.", "The main indicator of success is the net profit of the enterprise.", "выручка", "доходность", "прибыль", "затрата"],
+    ["Мы столкнулись с проблемой временной нехватки", "ликвидности", ".", "We faced a problem of temporary lack of liquidity.", "валюты", "ликвидности", "прибыли", "активов"],
+    ["В условиях кризиса наблюдается волатильность", "фондового рынка", ".", "In crisis conditions, volatility of the stock market is observed.", "фондового рынка", "бизнес-плана", "валютного курса", "экспорта"],
+    ["Общая", "задолженность", "компании перед кредиторами выросла.", "The company's total debt to creditors has grown.", "выручка", "прибыль", "задолженность", "сумма"],
+    ["Внедрение новых технологий повышает", "производительность", "труда.", "The introduction of new technologies increases labor productivity.", "производительность", "стоимость", "зарплату", "рентабельность"],
+    ["На заседании обсуждались вопросы", "налогообложения", "малого бизнеса.", "Issues of small business taxation were discussed at the meeting.", "производства", "финансирования", "налогообложения", "экспорта"],
+    ["Фирма подала заявление о признании её", "банкротом", ".", "The firm filed an application to be recognized as bankrupt.", "кредитором", "банкротом", "инвестором", "партнером"],
+    ["Эффективное", "управление активами", "минимизирует финансовые риски.", "Effective asset management minimizes financial risks.", "управление активами", "планирование", "налогообложение", "инвестирование"],
+    ["В этом году наблюдается положительное", "сальдо", "торгового баланса.", "A positive trade balance surplus is observed this year.", "сальдо", "состояние", "изменение", "влияние"],
+    ["Нам нужно проанализировать", "издержки", "на логистику.", "We need to analyze the logistics costs/expenses.", "издержки", "прибыль", "доходы", "налоги"],
+    ["Банк предлагает льготные условия", "кредитования", "для фермеров.", "The bank offers preferential lending terms for farmers.", "финансирования", "инвестирования", "кредитования", "страхования"],
+    ["Годовой", "товарооборот", "между странами достиг рекордных значений.", "Annual trade turnover between the countries reached record levels.", "товарооборот", "бюджет", "контракт", "обмен"],
+    ["Подписание этого соглашения — важный", "этап", "нашего сотрудничества.", "The signing of this agreement is an important stage of our cooperation.", "договор", "этап", "момент", "успех"],
+    ["Страхование поможет покрыть возможные", "убытки", ".", "Insurance will help cover possible losses.", "доходы", "налоги", "расходы", "убытки"],
+    ["Мы ищем способы оптимизации", "налоговых выплат", ".", "We are looking for ways to optimize tax payments.", "финансовых потоков", "налоговых выплат", "кадровых ресурсов", "инвестиций"],
+    ["Процесс", "приватизации", "государственного имущества вызвал споры.", "The process of privatization of state property caused disputes.", "монополизации", "приватизации", "модернизации", "национализации"],
+    ["Аналитики прогнозируют стагнацию в", "реальном секторе", "экономики.", "Analysts predict stagnation in the real sector of the economy.", "банковском секторе", "реальном секторе", "частном секторе", "госструктурах"],
+    ["Заключение", "фьючерсного контракта", "поможет зафиксировать цену.", "The conclusion of a futures contract will help fix the price.", "фьючерсного контракта", "бизнес-плана", "трудового договора", "кредита"]
+  ],
+  "dictionary": "девальвация - devaluation\nконкурентоспособность - competitiveness\nинфляция - inflation\nинвестиции - investments\nдивиденды - dividends\nрентабельность - profitability\nбизнес-план - business plan\nприбыль - profit\nликвидность - liquidity\nфондовый рынок - stock market\nзадолженность - debt/indebtedness\nпроизводительность - productivity\nналогообложение - taxation\nбанкрот - bankrupt\nуправление активами - asset management\nсальдо - surplus/balance\nиздержки - costs/expenses\nкредитование - lending\nтоварооборот - trade turnover\nэтап - stage/phase\nубытки - losses\nналоговые выплаты - tax payments\nприватизация - privatization\nреальный сектор - real sector\nфьючерсный контракт - futures contract"
+}
