@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+<meta property="og:title" content="Deicto | Level Menu">
+<meta property="og:description" content="A silly language learning game made by an even sillier student">
+<meta property="og:image" content="https://rigelium.github.io/deicto/assets/logo.png">
 
+     
+    <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/638813266440880140/1452871487945048154/image.png?ex=694b6383&is=694a1203&hm=ea28a03cd258d23b8acf516ce5d50e8d8c18830545825d3c39ad702c7ab846fc">
+    <link rel="stylesheet" href="../assets/styles.css">
+    <title>Deicto</title>
+  </head>
+  <body>
+
+    <input id="input">Select language</input>
+    <button id="btn" onclick="saveLocal()">Set data</button>
+    <input id="dif-input">Select language</input>
+    <button id="dif-btn" onclick="saveLocal()">Set data</button>
+    <input id="code-input">Select language code</input>
+    <button id="code-btn" onclick="saveLocal()">Set data</button>
+    
+    <script>
+      //language parameters are already defined
+
+      let language = "Hungarian";
+      language = retrieveVariable("language", language);
+      let langCodeTSS = "HU-hu";
+      langCodeTSS = retrieveVariable("langCodeTSS", langCodeTSS); // Looking if there is a stored variable and updating it if needed
+      let difLevel = "beginner"; // Default value
+      difLevel = retrieveVariable("difLevel", difLevel);
+
+
+      const input = document.getElementById('input');
+      const btn = document.getElementById('btn');
+
+      const difInput = document.getElementById('dif-input');
+      const difBtn = document.getElementById('dif-btn');
+      
+      function saveLocal() {
+        localStorage.setItem('currentLevel', input.value);
+        console.log("Go to /play/ to play this level: ${input.value}");
+      }
+
+      
+
+      
+      function retrieveVariable(varName, defaultValue) {
+        try {
+          const storedValue = localStorage.getItem(varName);
+          if (storedValue == null){
+            return defaultValue;
+          }
+          return storedValue;
+        } catch(error) {
+          console.error(error);
+          return defaultValue;
+        }
+      }
+      
+    </script>
+  </body>
+</html>
