@@ -16,6 +16,26 @@
 
     <script>
       //language parameters are already defined
+
+      let language = "Hungarian";
+      language = retrieveVariable("language", language);
+      let langCodeTSS = "HU-hu";
+      langCodeTSS = retrieveVariable("langCodeTSS", langCodeTSS); // Looking if there is a stored variable and updating it if needed
+      let difficulty = "beginner"; // Default value
+      difLevel = retrieveVariable("difLevel", difLevel);
+      
+      function retrieveVariable(varName, defaultValue) {
+        try {
+          const storedValue = localStorage.getItem(varName);
+          if (variable == null){
+            return defaultValue;
+          }
+          return storedValue;
+        } catch(error) {
+          console.error(error);
+          return defaultValue;
+        }
+      }
       
     </script>
   </body>
