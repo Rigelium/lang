@@ -182,6 +182,9 @@
         rightAnswer.style.backgroundColor = 'var(--boxcolor1)';
         rightAnswer.style.color = 'var(--blueish)';
         rightAnswer.href = "https://en.wiktionary.org/wiki/" + sentencesHu[currentSentence][1] + "#" + language;
+
+          //SENTENCE ANSWERED
+          playText(sentencesHu[currentSentence][0] + sentencesHu[currentSentence][1] + sentencesHu[currentSentence][2], 'HU-hu');
         showContinue();
         if (answerText[i].textContent==sentencesHu[currentSentence][1]){
           //CORRECT CHOICE
@@ -226,6 +229,21 @@
       contContainer.appendChild(cont);
       
       }
+    }
+//////////////////////////////////////////////////////////////TSS HERE
+    function playText(text, langCode) {
+    // 1. Create a "shout" object
+    const utterance = new SpeechSynthesisUtterance(text);
+    
+    // 2. Set the language (e.g., 'hu-HU', 'pl-PL', 'de-DE')
+    utterance.lang = langCode;
+    
+    // 3. Optional: Adjust pitch and rate for better clarity
+    utterance.rate = 0.9; // Slightly slower than normal for learners
+    utterance.pitch = 1.0;
+
+    // 4. Speak!
+    window.speechSynthesis.speak(utterance);
     }
   </script>
 </body>
