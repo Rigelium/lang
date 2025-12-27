@@ -28,10 +28,23 @@
       
       const path = language + "/" + difLevel + "/";
 
-      let lvFound = 0;
+      let checkedLv = 1;
+      let endReached = 0;
 
       async function listLevels {
-        
+        while( endReached == 0 ) {
+          try {
+            const response = await fetch(path + "lv_" + checkedLv);
+            levelData = await response.json();
+            
+
+            console.log("Loaded level" + checkedLv);
+            checkedLv++;
+          } catch(error) {
+            endReached = 1;
+            console.log(error);
+          } 
+        }
       }
 
 
