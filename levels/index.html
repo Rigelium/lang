@@ -53,8 +53,12 @@
       function dispLevel(levelNumber, levelTitle, numOfSentences) {
         const lvContainer = document.getElementById('lv-container');
         const level = document.createElement('a');
-        level.textContent = levelNumber + " " + levelTitle + " " + numOfSentences;
-        lvContainer.appendChild(level);
+        level.innerHTML = `
+        <div class='box1'>
+          <div style='width:60%'>
+          <a>Lv. ${levelNumber} - $levelTitle</a>
+          </div>
+        </div>`;
 
         
         console.log("Loaded level: " + levelNumber + levelTitle + numOfSentences);
