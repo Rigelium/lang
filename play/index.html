@@ -243,26 +243,43 @@
     window.speechSynthesis.speak(utterance);
     }*/
 
-    function playText(text, langCode) {
+function playText(text, langCode) {
     const utterance = new SpeechSynthesisUtterance(text);
-    
-    // Get all available voices on this specific device
     const voices = window.speechSynthesis.getVoices();
+    const shortCode = langCode.split('-')[0].toLowerCase();
 
-    // Find a voice that matches your requested language (e.g., 'hu-HU')
-    const selectedVoice = voices.find(voice => voice.lang.includes(langCode));
+    // 1. Attempt to find a LOCAL voice first
+    let selectedVoice = voices.find(v => 
+        v.lang.toLowerCase().replace('_', '-').startsWith(shortCode) && 
+        v.localService === true
+    );
+
+    // 2. FALLBACK: If no local voice, look for a Google/Network voice
+    if (!selectedVoice) {
+        console.log(`No native voice found for ${langCode}. Searching for Google fallback...`);
+        selectedVoice = voices.find(v => 
+            v.lang.toLowerCase().replace('_', '-').startsWith(shortCode) && 
+            (v.name.includes("Google") || v.localService === false)
+        );
+    }
+
+    // 3. LAST RESORT: Just pick the first voice that matches the language at all
+    if (!selectedVoice) {
+        selectedVoice = voices.find(v => 
+            v.lang.toLowerCase().replace('_', '-').startsWith(shortCode)
+        );
+    }
 
     if (selectedVoice) {
         utterance.voice = selectedVoice;
-        utterance.lang = selectedVoice.lang; // Sync them up
+        console.log(`Using voice: ${selectedVoice.name} (Local: ${selectedVoice.localService})`);
     } else {
-        console.warn(`No voice found for ${langCode}. Falling back to default.`);
-        utterance.lang = langCode; // Fallback attempt
+        console.warn(`Absolutely no voice found for ${langCode}. Using system default.`);
+        utterance.lang = langCode; 
     }
 
     window.speechSynthesis.speak(utterance);
 }
-
     
     /////////////////////////////////////////////////////////////////////////////////////RETRIEVE DATA
     function retrieveVariable(varName, defaultValue) {
