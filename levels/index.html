@@ -16,19 +16,26 @@
 
     <input id="input">Type level</input>
     <button id="btn" onclick="saveLocal()">Play level</button>
+    <div id="lv-container"></div>
 
     
     <script>
-      //language parameters are already defined
 
-      let language = "Hungarian";
-      language = retrieveVariable("language", language);
-      let langCodeTSS = "HU-hu";
-      langCodeTSS = retrieveVariable("langCodeTSS", langCodeTSS); // Looking if there is a stored variable and updating it if needed
-      let difLevel = "beginner"; // Default value
-      difLevel = retrieveVariable("difLevel", difLevel);
+      // Trying to load data from the main page (course settings)
+      let language = retrieveVariable("language", "Hungarian");
+      let langCodeTSS = retrieveVariable("langCodeTSS", "hu-HU"); 
+      let difLevel = retrieveVariable("difLevel", "beginner");
+      
+      const path = language + "/" + difLevel + "/";
+
+      let lvFound = 0;
+
+      async function listLevels {
+        
+      }
 
 
+      //WIP settings
       const input = document.getElementById('input');
       const btn = document.getElementById('btn');
 
