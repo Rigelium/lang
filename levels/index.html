@@ -31,7 +31,7 @@
       let checkedLv = 1;
       let endReached = 0;
 
-      async function listLevels {
+      async function listLevels() {
         while( endReached == 0 ) {
           try {
             const response = await fetch(path + "lv_" + checkedLv);
