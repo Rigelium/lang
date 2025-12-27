@@ -14,7 +14,12 @@
   </head>
   <body>
 
-    <div id="lv-container" style="gap: 10px;"></div>
+    <div class='box1'>
+      <div style="width: 40%">
+        <img src='' id='flag'>
+      </div>
+    </div>
+    <div id='lv-container' style="gap: 10px;"></div>
 
     
     <script>
@@ -36,6 +41,7 @@
             const response = await fetch(path + "lv_" + checkedLv + ".json");
             levelData = await response.json();
             dispLevel(checkedLv, levelData.title, levelData.sentences.length); // 
+            updateInfo();
             checkedLv++;
           } catch(error) {
             endReached = 1;
@@ -43,7 +49,6 @@
           } 
         }
       }
-
 
 
       function dispLevel(levelNumber, levelTitle, numOfSentences) {
@@ -67,11 +72,16 @@
         console.log("Loaded level: " + levelNumber + levelTitle + numOfSentences);
       }
 
-      function selectLevel(levelNr){
+      function selectLevel(levelNr) {
         localStorage.setItem('currentLevel', levelNr);
         window.location.href = `../play/`;
       }
 
+      function updateInfo() {
+        const flag = document.getElementById('flag');
+        flag.src = `../assets/flags/${language}.png`
+      
+      }
 
 
 
