@@ -15,9 +15,9 @@
   <body>
 
     <div class='box1'>
-      <img src='' style="width: 40%; height: auto; border-radius: 4px;">
+      <img id = 'flag' src='' style="width: 40%; height: auto; border-radius: 4px;">
       <div style="display: flex; flex-direction: column;">
-        <a>Loading levels...</a>
+        <a id='info-language'>Loading levels...</a>
       </div>
     </div>
     <div id='lv-container' style="gap: 10px;"></div>
@@ -81,7 +81,9 @@
       function updateInfo() {
         const flag = document.getElementById('flag');
         flag.src = `../assets/flags/${language}.png`
-      
+
+        const infoLanguage = document.getElementById('info-language');
+        infoLanguage.textContent = language;
       }
 
 
