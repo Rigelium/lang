@@ -1,0 +1,31 @@
+{
+  "title": "Architecture",
+  "sentences": [
+    ["Этот собор является выдающимся образцом русского", "барокко", "XVIII века.", "This cathedral is an outstanding example of 18th-century Russian Baroque.", "классицизма", "барокко", "модерна", "готики"],
+    ["Главный фасад здания украшает величественная", "колоннада", "ионического ордера.", "The main facade of the building is decorated with a majestic colonnade of the Ionic order.", "лестница", "арка", "колоннада", "терасса"],
+    ["При реставрации было важно сохранить оригинальную", "лепнину", "на потолке.", "During restoration, it was important to preserve the original molding on the ceiling.", "кирпич", "лепнину", "плитку", "арматуру"],
+    ["Проект предусматривает использование современных", "несущих конструкций", "из стали.", "The project involves the use of modern load-bearing structures made of steel.", "несущих конструкций", "декоративных элементов", "отделочных материалов", "чертежей"],
+    ["Архитектор решил акцентировать внимание на", "панорамном остеклении", "верхнего этажа.", "The architect decided to emphasize the panoramic glazing of the top floor.", "фундаменте", "панорамном остеклении", "вентиляции", "планировке"],
+    ["Старый город известен своими узкими улочками и", "готическими", "соборами.", "The old town is known for its narrow streets and Gothic cathedrals.", "советскими", "деревянными", "готическими", "плоскими"],
+    ["Для устойчивости здания необходим глубокий и прочный", "фундамент", ".", "A deep and solid foundation is necessary for the stability of the building.", "купол", "чердак", "карниз", "фундамент"],
+    ["В эпоху", "модерна", "архитекторы часто использовали текучие, органические формы.", "In the Art Nouveau era, architects often used fluid, organic forms.", "модерна", "минимализма", "конструктивизма", "ампира"],
+    ["Здание венчает массивный", "купол", ", покрытый позолотой.", "The building is topped with a massive dome covered in gilding.", "подвал", "купол", "забор", "флюгер"],
+    ["Внутренняя", "планировка", "дома была полностью пересмотрена для удобства жителей.", "The internal layout of the house was completely revised for the convenience of the residents.", "штукатурка", "планировка", "изоляция", "облицовка"],
+    ["Этот небоскреб стал символом современного", "урбанизма", "в центре мегаполиса.", "This skyscraper has become a symbol of modern urbanism in the center of the metropolis.", "деревни", "интерьера", "ландшафта", "урбанизма"],
+    ["На чертеже четко виден", "разрез", "здания со всеми этажами.", "The drawing clearly shows the section (cutaway) of the building with all floors.", "портрет", "разрез", "пейзаж", "эскиз"],
+    ["Фасад облицован натуральным", "известняком", "светлого оттенка.", "The facade is clad in light-colored natural limestone.", "бетоном", "стеклом", "известняком", "деревом"],
+    ["Вход в музей оформлен в виде классического", "портика", ".", "The entrance to the museum is designed in the form of a classic portico.", "окна", "балкона", "портика", "лифта"],
+    ["Современная архитектура часто стремится к", "минимализму", "и функциональности.", "Modern architecture often strives for minimalism and functionality.", "излишеству", "минимализму", "хаосу", "декору"],
+    ["Для защиты от влаги была проведена качественная", "гидроизоляция", "подвала.", "High-quality waterproofing of the basement was carried out for moisture protection.", "гидроизоляция", "вентиляция", "канализация", "электрификация"],
+    ["Архитектурный", "ансамбль", "площади гармонично сочетает разные стили.", "The architectural ensemble of the square harmoniously combines different styles.", "контраст", "беспорядок", "ансамбль", "фрагмент"],
+    ["Вдоль крыши тянется изящный резной", "карниз", ".", "An elegant carved cornice runs along the roof.", "карниз", "пол", "дверной проем", "стеллаж"],
+    ["При строительстве моста использовались высокопрочные", "перекрытия", ".", "High-strength floor slabs/ceilings were used during the construction of the bridge.", "стены", "перекрытия", "леса", "краски"],
+    ["Этот стиль характеризуется строгой", "симметрией", "и четкостью линий.", "This style is characterized by strict symmetry and clarity of lines.", "кривизной", "симметрией", "асимметрией", "случайностью"],
+    ["Инженер проверил прочность", "стропильной системы", "крыши.", "The engineer checked the strength of the roof truss system.", "водостока", "стропильной системы", "черепицы", "дымохода"],
+    ["Здание было признано памятником", "культурного наследия", ".", "The building was recognized as a cultural heritage site.", "промышленности", "культурного наследия", "быта", "природы"],
+    ["Для отделки стен была выбрана венецианская", "штукатурка", ".", "Venetian plaster was chosen for the wall finishing.", "плитка", "обои", "краска", "штукатурка"],
+    ["Проект прошел стадию", "согласования", "в городском совете.", "The project passed the stage of approval in the city council.", "разрушения", "продажи", "согласования", "критики"],
+    ["Архитектор представил", "макет", "будущего жилого комплекса.", "The architect presented a scale model of the future residential complex.", "макет", "фотографию", "картину", "отчет"]
+  ],
+  "dictionary": "барокко - Baroque\nколоннада - colonnade\nлепнина - molding/stucco\nнесущие конструкции - load-bearing structures\nпанорамное остекление - panoramic glazing\nготический - Gothic\nфундамент - foundation\nмодерн - Art Nouveau/Modernism\nкупол - dome\nпланировка - layout\nурбанизм - urbanism\nразрез - section/cutaway\nизвестняк - limestone\nпортик - portico\nминимализм - minimalism\nгидроизоляция - waterproofing\nансамбль - ensemble\nкарниз - cornice\nперекрытия - floor slabs/ceilings\nсимметрия - symmetry\nстропильная система - roof truss system\nкультурное наследие - cultural heritage\nштукатурка - plaster\nсогласование - approval/coordination\nмакет - scale model"
+}
