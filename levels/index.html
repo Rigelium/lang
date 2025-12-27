@@ -52,11 +52,14 @@
 
       function dispLevel(levelNumber, levelTitle, numOfSentences) {
         const lvContainer = document.getElementById('lv-container');
-        const level = document.createElement('a');
+        const level = document.createElement('div');
         level.innerHTML = `
         <div class='box1'>
-          <div style='width:60%; justify-content: flex-start;'>
-          <a margin: 2px;>Lv. ${levelNumber} - ${levelTitle}</a>
+          <div style='width:60%; flex-direction: column; justify-content: flex-start;'>
+            <a margin: 2px;>Lv. ${levelNumber} - ${levelTitle}</a>
+            <div>
+              
+            </div>
           </div>
         </div>`;
 
