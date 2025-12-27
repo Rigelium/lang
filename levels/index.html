@@ -26,7 +26,7 @@
       let langCodeTSS = retrieveVariable("langCodeTSS", "hu-HU"); 
       let difLevel = retrieveVariable("difLevel", "beginner");
       
-      const path = language + "/" + difLevel + "/";
+      const path = language.toLowerCase() + "/" + difLevel + "/";
 
       let checkedLv = 1;
       let endReached = 0;
@@ -35,7 +35,7 @@
       async function listLevels() {
         while( endReached == 0 ) {
           try {
-            const response = await fetch(path + "lv_" + checkedLv);
+            const response = await fetch(path + "lv_" + checkedLv + ".json");
             levelData = await response.json();
             
 
