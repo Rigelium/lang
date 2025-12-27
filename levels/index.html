@@ -38,6 +38,11 @@
         while( endReached == 0 ) {
           try {
             const response = await fetch(path + "lv_" + checkedLv + ".json");
+            if (!response.ok) {
+                console.log(`Level ${checkedLv} not found. Ending search.`);
+                endReached = 1;
+                break; // Exit the loop
+            }
             levelData = await response.json();
             dispLevel(checkedLv, levelData.title, levelData.sentences.length); // 
             checkedLv++;
