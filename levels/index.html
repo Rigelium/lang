@@ -28,29 +28,25 @@
       
       const path = language.toLowerCase() + "/" + difLevel + "/";
 
-      let checkedLv = 1;
-      let endReached = 0;
+
 
       listLevels();
 
-      /*async function listLevels() {
+      async function listLevels() {
+      let checkedLv = 1;
+      let endReached = 0;
         while( endReached == 0 ) {
           try {
             const response = await fetch(path + "lv_" + checkedLv + ".json");
-            if (!response.ok) {
-                console.log(`Level ${checkedLv} not found. Ending search.`);
-                endReached = 1;
-                break; // Exit the loop
-            }
-            const levelData = await response.json();
+            levelData = await response.json();
             dispLevel(checkedLv, levelData.title, levelData.sentences.length); // 
             checkedLv++;
           } catch(error) {
             endReached = 1;
-            //console.log(error);
+            console.log(error);
           } 
         }
-      }*/
+      }
 
       async function listLevels() {
     let checkedLv = 1; // Assuming you start at 1
@@ -84,6 +80,7 @@
         const lvContainer = document.getElementById('lv-container');
         const level = document.createElement('a');
         level.textContent = levelNumber + " " + levelTitle + " " + numOfSentences;
+        lvContainer.appendChild(level);
 
         
         console.log("Loaded level: " + levelNumber + levelTitle + numOfSentences);
