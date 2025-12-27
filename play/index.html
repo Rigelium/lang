@@ -61,15 +61,13 @@
     // USER SETTINGS
     
     // COURSE SETTINGS
-    let language = "Hungarian";
-    language = retrieveVariable("language", language);
-    let langCodeTTS = "HU-hu";
-    langCodeTTS = retrieveVariable("langCodeTTS", langCodeTTS);
-    let difLevel = "advanced";
-    difLevel = retrieveVariable("difLevel", difLevel);
-    let currentLevel = "1"; //default variable
-    currentLevel = retrieveVariable("currentLevel", currentLevel); //looking for a stored variable
+    let language = retrieveVariable("language", "Hungarian");
+    let langCodeTTS = retrieveVariable("langCodeTTS", "HU-hu");
+    let difLevel = retrieveVariable("difLevel", "advanced");
+    // LEVEL SETTING
+    let currentLevel = retrieveVariable("currentLevel", "1"); 
 
+    // LEVEL DATA LOADING --------------------------------------------------------------------------------
     let levelData, sentencesHu, lvTitle, notes = null;
     async function loadLevelData() {
       try {
@@ -88,6 +86,7 @@
       }
     }
 
+    //////////////////////////////////////////////////////////////////////////////notes/////////////////////////////////////////////////////////////////////////////////////////
     function displayNotes() {
       const notesContainer = document.getElementById('notes-container');
       const dictionaryContainer = document.getElementById('dictionary-container');
@@ -119,7 +118,7 @@
     }
 
 
-    
+    //=======================================================================================================================================================
     
     function generateSentence() {
       
@@ -151,7 +150,7 @@
       translated.textContent = sentencesHu[currentSentence][3];
     
 
-    //GENERATE THE ANSWERS
+    //GENERATE THE ANSWERS 4444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444
     const answerContainer = document.getElementById("answer-container");
     const answer = [];
     const answerText = [];
@@ -193,6 +192,15 @@
       contContainer = document.getElementById('cont-container');
       const cont = document.createElement('div');
       cont.className="box1";
+
+      const repeatTTS = document.createElement('div');
+      repeatTTS.className="box1";
+      repeatTTS.addEventListener('click', ()=>{
+        playText(sentencesHu[currentSentence][0] + sentencesHu[currentSentence][1] + sentencesHu[currentSentence][2], langCodeTTS);
+      });
+      repeatTTS.style.backgroundColor="var(--highlight)";
+      repeatTTS.style.width = "30%";
+      
       //cont.style.backgroundColor="var(--grayish)";
 
       const nextSent = document.createElement('div');
@@ -215,6 +223,7 @@
       nextSent.appendChild(nextSentText);
       cont.appendChild(nextSent);
       contContainer.appendChild(cont);
+      contContainer.appendChild(repeatTTS);
       
       }
     }
@@ -227,7 +236,7 @@
     utterance.lang = langCode;
     
     // 3. Optional: Adjust pitch and rate for better clarity
-    utterance.rate = 0.9; // Slightly slower than normal for learners
+    utterance.rate = 1.0; // Slightly slower than normal for learners
     utterance.pitch = 1.0;
 
     // 4. Speak!
